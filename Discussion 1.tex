@@ -16,6 +16,9 @@ Date: \hrulefill
 \bigskip
 \normalsize{\textit{The goal of this discussion is to review the statistical concepts described in Appendix B described in Gillespie's ``Population Genetics: A Concise Guide'' that will be useful for this class. Questions to check conceptual understanding are provided, incorporating course material when applicable.}}
 
+\bigskip
+\normalsize{\textbf{\textit{Complete this worksheet to the best of your ability and bring it to the first discussion section. Also, please email me (leblake@uchicago.edu) any concepts or sections that you found challenging by Thursday night at midnight. }}}
+
 \end{center}
 
 \section{What are random variables?}
@@ -40,10 +43,10 @@ Date: \hrulefill
 \end{tabular}
 
 \bigskip
-\item \textbf{Concept Check 1:} In the table above, what is \\ Prob \{{\textbf{X} = \textit{$x_{1}$} }\}? \hrulefill
 
-\item \textbf{Concept Check 2:} In the table above, what is \\ Prob \{{\textbf{X} = \textit{$x_{i}$} }\}? \hrulefill
+\item \textbf{Concept Check 1:} In the table above, what is \\ Prob \{{\textbf{X} = \textit{$x_{i}$} }\}? \hrulefill
 
+\item \textbf{Concept Check 2:} In the table above, what is Prob \{{\textbf{X} = \textit{$x_{1}$} $\cup$ \textbf{X} = \textit{$x_{3}$}}\}? \hrulefill
 
 \end{itemize}
 
@@ -88,7 +91,7 @@ Date: \hrulefill
 
 \textit{Note: this question is based off of the material covered in the Human Variation and Disease Lecture titled ``Selection I''}
 
-\item \textbf{Concept Check 2}: We have measured the beaks of 5 subpopulations of finches and recorded our findings in the table below. What is the expected value of beak size for the population of finches? (In other words, what is \textit{E}\{\textbf{X}\}? Assume only these subpopulations make up the population of finches that we are interested in.) 
+\item \textbf{Concept Check 2}: We have measured the beaks of 5 subpopulations of finches and recorded our findings in the table below. What is the expected value of beak size for the population of finches? (In other words, what is \textit{E}\{\textbf{X}\}? Assume only these subpopulations make up the population of finches that we are interested in and there is no variation in beak length within sub-populations.) 
 
 \bigskip
 \begin{tabular}{| l | c | r |}
@@ -226,9 +229,9 @@ Prob \{\textbf{X} = \textit{i}\} = ${n \choose x}$ \textit{$p_{i}$} $\big( 1- \t
 
 \item Poisson random variables can take values 0, 1, $\ldots$, $\infty$ with probabilities 
 
-Prob \{\textbf{X} = \textit{i}\} = $\frac{e^{i}\mu^{i}}{i!}$
+Prob \{\textbf{X} = \textit{i}\} = $\frac{e^{-\mu}\mu^{i}}{i!}$
 
-\item \textbf{Concept Check 1:} When should the Poisson distribution be used instead of the Binomial distribution? 
+\item \textbf{Concept Check 1:} When can the Poisson distribution be used instead of the Binomial distribution? 
 
 \bigskip
 
@@ -243,7 +246,7 @@ Prob \{\textbf{X} = \textit{i}\} = $\frac{e^{i}\mu^{i}}{i!}$
 
 \bigskip
 
-Overlay an example of each of the distributions on a plot below:
+Overlay an example of each of the distributions on a plot below. Each distribution should have $\mu$ = 0.05 and \textit{n}= 10:
 
 \bigskip
 
@@ -260,6 +263,13 @@ Overlay an example of each of the distributions on a plot below:
 \bigskip
 
 \bigskip
+
+\bigskip
+
+\bigskip
+
+\bigskip
+
 
 \item \textbf{Concept Check 3:} Would you use the Binomial or Poisson distribution to describe the distribution of crossovers along a chromosome in meiosis? Justify your answer
 
@@ -293,7 +303,7 @@ Overlay an example of each of the distributions on a plot below:
 
 \begin{itemize}
 
-\item The random variables \textit{X} and \textit{Y} are independent if \textit{$p_{ij}$} = \hrulefill
+\item \textbf{Concept Check 1:} If Prob\{\textbf{X} = \textit{$x_{i}$}\} = $p_{i}$ and Prob\{\textbf{Y} = $x_{i}$\} = \textit{$p_{j}$}, then the random variables \textit{X} and \textit{Y} are independent if \textit{$p_{ij}$} = \hrulefill
 
 \item Covariance is defined as Cov \{\textbf{X,Y}\} =  \textit{E}\{\big($\textbf{X - $\mu_{x}$}$\big) \big($\textbf{Y - $\mu_{y}$}$\big)\}
 
@@ -303,7 +313,6 @@ Overlay an example of each of the distributions on a plot below:
 \item \textbf{Concept Check 1:} If \textit{X} and \textit{Y} tend to be large together and small together, then their covariance will be \hrulefill. 
 
 \item If two random variables are independent, then their covariance is \hrulefill.
-
 
 \item The correlation coefficient of \textit{X} and \textit{Y} = \[\frac{Cov(X, Y)}{\sqrt(Var (X))\sqrt(Var (Y))} \] 
 
@@ -322,7 +331,7 @@ Overlay an example of each of the distributions on a plot below:
 \bigskip
 
 \bigskip
-\textit{Note: This question is based on material found in the Human Variation and Disease lecture titled ``Quantative Genetics I''.}
+\textit{Note: These questions are based on material found in the Human Variation and Disease lectures titled ``LD'' and ``Quantative Genetics I''.}
 
 
  \end{itemize}
@@ -391,7 +400,7 @@ where \textit{f\big(x\big)} is the probability density function.
 
 \bigskip
 
-\item \textbf{Concept Check 2:} List some phenotypes that are normally distributed:
+\item \textbf{Concept Check 2:} List some phenotypes that we might model as normally distributed:
 
 \bigskip
 
@@ -447,38 +456,46 @@ $\frac{\textit{X} - \mu}{\sigma}$
 
 \subsection{Bivariate normal random variable (Challenging)}
 
-\begin{enumerate}
-
-\item We start with two independent normals, \textit{U} {\raise.17ex\hbox{$\scriptstyle\sim$}} N($\mu$, $\sigma^{2}$) and \textit{V} {\raise.17ex\hbox{$\scriptstyle\sim$}} N($\mu$, $\sigma^{2}$)
-
-\item We use of these variables in linear transformations with scalars \textit{a}, \textit{b}, \textit{c}, and \textit{d}. 
-
-\textit{X} = \textit{aU} + \textit{bV}, \\
-\textit{Y} = \textit{cU} + \textit{dV} \\
-
-\item Now, \textit{X} and \textit{Y} each are normally distributed (because they are linear functions of  independent normal random variables). 
-
-\item Since \textit{X} and \textit{Y} are linear functions of the \textbf{same} two independent normal random variables, their joint probability distribution is the bivariate normal distribution. 
-
-\end{enumerate}
-
 \begin{itemize}
 
-\item In the bivariate normal distribution, we need the means of each of the random variables, the variances of the two random variables, and the covariance of the correlation coefficient, $\rho$.
+\item We can represent two correlated random variables that each follow a normal distribution with the bivariate normal distribution. We can represent these correlated variables with random vector \textit{Z}. This vector \textit{Z} will have the vector mean $\mu$ and covarariance matrix $\Sigma$.
 
-\item A handful of the journal articles that we read in this class will use the bivariate normal distribution (e.g. Pritchard et al. 2000 Genetics 155:945). 
+\item The probability density for the bivariate normal distribution, incorporates the means of each of the random variables (below written as \textit{X} and \textit{Y} for clarity), the variances of the two random variables, and the correlation coefficient, $\rho$.
 
-\item We will more frequently use the moments and properties of the bivariate normal distribution, for example, in linear regression. 
+\[
+f(x,y)=\frac{\exp \left\{ -\frac 1{2(1-\rho ^2)}\left[ \left( \frac{x-\mu _x%
+}{\sigma _x}\right) ^2-2\rho \left( \frac{x-\mu _x}{\sigma _x}\right) \left( 
+\frac{y-\mu _y}{\sigma _y}\right) +\left( \frac{y-\mu _y}{\sigma _y}\right)
+^2\right] \right\} }{2\pi \sigma _x\sigma _y\sqrt{1-\rho ^2}} 
+\]
+
+where $(\mu _x,\mu _y)$ is the mean vector and the variance-covariance
+matrix is
+
+\[
+\left( 
+\begin{array}{cc}
+Var(X) & Cov(X,Y) \\ 
+Cov(X,Y) & Var(Y)
+\end{array}
+\right) =\left( 
+\begin{array}{cc}
+\sigma _x^2 & \rho \sigma _x\sigma _y \\ 
+\rho \sigma _x\sigma _y & \sigma _y^2
+\end{array}
+\right) 
+\]
+
+\bigskip
+\item The bivariate normal can be generalized to include more than two univariate random variables, called multivariate normal distributions. 
+
+\item A handful of the journal articles that we read in this class will use the bivariate or multivariate normal distribution (e.g. Pritchard et al. 2000 Genetics 155:945). 
+
+\item We will also use the moments and properties of the bivariate normal distribution, for example, in linear regression. 
 
 \item What is the goal of linear regression? 
 
-\bigskip
-
-\bigskip
-
-\bigskip
-
-
+\newpage
 \item The regression of \textbf{Y} on \textbf{X} is 
 
 
@@ -537,7 +554,7 @@ $\beta$ is
 
 \bigskip
 
-\textbf{Note:} This worksheet was created by Lauren E. Blake using the material from ``Population Genetics, A Concise Guide'' by John Gillespie 2nd edition and ``Introduction to Probability'' by D. P. Bertsekas and J. N. Tsitsiklis, 1st edition.
+\textbf{Note:} This worksheet was created by Lauren E. Blake using the material from ``Population Genetics, A Concise Guide'' by John Gillespie 2nd edition and ``Introduction to Probability'' by D. P. Bertsekas and J. N. Tsitsiklis, 1st edition. Kindly edited by course instructor John Novembre. 
 
 
 
