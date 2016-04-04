@@ -2,6 +2,7 @@
 \usepackage{amsmath}
 \usepackage{amsfonts}
 \usepackage{graphicx}
+\usepackage{color}
 
 
 \begin{document}
@@ -10,8 +11,16 @@ Date: \hrulefill
 
 \begin{center}
 
+
+\color{black}
 \bigskip
 \large{\textbf{Human Variation and Disease: Discussion 1 Notes and Concept Checks}}
+
+\bigskip
+
+\color{red} Answer Key
+
+\color{black}
 
 \bigskip
 \normalsize{\textit{The goal of this discussion is to review the statistical concepts described in Appendix B described in Gillespie's ``Population Genetics: A Concise Guide'' that will be useful for this class. Questions to check conceptual understanding are provided, incorporating course material when applicable.}}
@@ -44,9 +53,10 @@ Date: \hrulefill
 
 \bigskip
 
-\item \textbf{Concept Check 1:} In the table above, what is \\ Prob \{{\textbf{X} = \textit{$x_{i}$} }\}? \hrulefill
+\item \textbf{Concept Check 1:} In the table above, what is \\ Prob \{{\textbf{X} = \textit{$x_{i}$} }\}? \color{red} \textit{$p_{i}$} 
 
-\item \textbf{Concept Check 2:} In the table above, what is Prob \{{\textbf{X} = \textit{$x_{1}$} $\cup$ \textbf{X} = \textit{$x_{3}$}}\}? \hrulefill
+\color{black}
+\item \textbf{Concept Check 2:} In the table above, what is Prob \{{\textbf{X} = \textit{$x_{1}$} $\cup$ \textbf{X} = \textit{$x_{3}$}}\}? \color{red} \textit{$p_{1}$} + \textit{$p_{3}$}  
 
 \end{itemize}
 
@@ -75,19 +85,10 @@ Date: \hrulefill
 
 \bigskip
 
-\bigskip
+\color{red} $\bar{w}$ = (1) \textit{$p^{2}$} + (1-\textit{hs}) 2\textit{pq} + (1-\textit{s}) \textit{$q^{2}$} = 1 - 2\textit{pqhs} - \textit{$q^{2}$}\textit{s}
 
 \bigskip
-
-\bigskip
-
-\bigskip
-
-\bigskip
-
-\bigskip
-
-\bigskip
+\color{black}
 
 \textit{Note: this question is based off of the material covered in the Human Variation and Disease Lecture titled ``Selection I''}
 
@@ -106,17 +107,9 @@ Date: \hrulefill
 
 \bigskip
 
-\bigskip
+\color{red} 0.4*0.1 + 0.55*.3 + 0.65*.15 + 0.35*.25 + 0.47*0.2 = 0.484 mm
 
-\bigskip
-
-\bigskip
-
-\bigskip
-
-\bigskip
-
-\bigskip
+\color{black}
 
 \bigskip
 \textit{Note: this question is based off of the material covered in the Human Variation and Disease Lecture titled ``Quantitative Genetics I''}
@@ -137,18 +130,13 @@ Date: \hrulefill
 
 \bigskip
 
-\bigskip
+\color{red} \textit{E}\{$\textbf{X}^{2}$\} = $0.4^2$ $\times$ 0.1 + $0.55^2$  $\times$ 0.3 + $0.65^2$  $\times$ 0.15 + $0.35^2$  $\times$ 0.25 + $0.47^2$  $\times$ 0.2 = 0.24493
 
-\bigskip
+\textit{E}\{$\textbf{X}\}^{2}$ = $(answer from above)^2$ = $0.484^2$ = 0.23426
 
-\bigskip
+Var\{\textbf{X}\} =  \textit{E}\{$\textbf{X}^{2}$\} -  \textit{E}\{$\textbf{X}\}^{2}$ = 0.24493 - 0.23426 = 0.01067
 
-\bigskip
-
-\bigskip
-
-\bigskip
-
+\color{black}
 \bigskip
 \textit{Note: this question is based off of the material covered in the Human Variation and Disease Lecture titled ``Quantitative Genetics I''}
 
@@ -163,28 +151,28 @@ Date: \hrulefill
 
 \item The Bernoulli random variable is used when there is one trial of an event where there are only two possible outcomes: success (where \textbf{X} = 1) and failure (where \textbf{X} = 0). 
 
-\item \textbf{Concept Check 6:}   The mean of a Bernoulli random variable is \hrulefill \\
-and the variance is \hrulefill.
+\item \textbf{Concept Check 6:}  The mean of a Bernoulli random variable is \color{red} 1 $\times$ \textit{p} + 0 $\times$ \textit{q}  = \textit{p}
+\color{black}
+and the variance is \color{red} \textit{pq}
 
+\bigskip
+\textit{E}\{$\textbf{X}^{2}$\} = $1^{2}$  $\times$ \textit{p} + $0^{2}$  $\times$ \textit{q} = \textit{p}
+ 
+\textit{E}\{$\textbf{X}\}^{2}$ = $(mean)^{2}$ = $p^{2}$
+
+Var =  \textit{E}\{$\textbf{X}^{2}$\} -  \textit{E}\{$\textbf{X}\}^{2}$ = \textit{p} - $p^2$ = \textit{p(1-p)} = \textit{pq}
+
+
+
+\color{black}
 \item \textbf{Concept Check 7}: What is a use of the Bernoulli distribution in genetics? In your example, describe what is a ``success'' and what is a '``failure''.  
 
 \end{itemize}
 \bigskip
 
-\bigskip
+\color{red} One example is the proportion of haploid chromosomes carrying an allele for a particular Mendelian disease. A ``success'' is the chromosome carrying the disease allele and ``failure'' is the chromosome not carrying the disease allele. The probability of success is the frequency of the Mendelian disease-causing variant in the population and the probability of failure is the complement of the probability of success. 
 
-\bigskip
-
-\bigskip
-
-\bigskip
-
-\bigskip
-
-\bigskip
-
-\bigskip
-
+\color{black}
 \subsection{Binomial Random Variable}
 
 \begin{itemize}
@@ -197,27 +185,22 @@ Prob \{\textbf{X} = \textit{i}\} = ${n \choose x}$ \textit{$p^{i}$} $\big( 1- \t
 
 \item \textbf{Concept Check 8}: How are Bernoulli and Binomial random variables related?
 
-\bigskip
+\color{red} The binomial distribution allows for n number of independent Bernoulli trials.
 
-\bigskip
-
-\bigskip
+\color{black}
 
 \item \textbf{Concept Check 9}: Keeping in mind your answer to Concept Check 2, what is the mean of a binomial random variable? The variance?
 
-\bigskip
+\color{red} Multiply the mean and then the variance of the Bernoulli distribution by n so that the mean is \textit{n} and the variance is \textit{npq}. 
 
-\bigskip
-
-\bigskip
+\color{black}
 
 \item \textbf{Challenge 1}: In the Wright-Fisher model that we will study in class, we want to know the proportion of offspring that carry allele A from some population. What factors will be important for us to consider given that the Wright-Fisher model is a binomial sampling distribution?
 
-\bigskip
+\color{red} Population size to find the number of gametes (2N) and the number of adult chromosomes that carry allele \textit{A} will allow us to find the probability of j gametes with allele \textit{A} in the offspring given i gametes with allele \textit{A} in the adult population. Note: there are several assumptions that allow us to model this as a binomial distribution.
 
-\bigskip
 
-\bigskip
+\color{black}
 
 \end{itemize}
 
@@ -233,40 +216,30 @@ Prob \{\textbf{X} = \textit{i}\} = $\frac{e^{-\mu}\mu^{i}}{i!}$
 
 \item \textbf{Concept Check 10:} When can the Poisson distribution be used instead of the Binomial distribution? 
 
-\bigskip
+\color{red} When p (probability of a success) is much smaller than n (number of trials\/sample size).  
 
-\bigskip
-
+\color{black}
 \bigskip
 \item \textbf{Concept Check 11:} How does the Poisson distribution look different than the Binomial distribution? 
 
-\bigskip
+\color{red} 
+The Poisson distribution will have a higher density closer to 0 than the Binomial distribution. We can see that in the plot below.  
 
-\bigskip
-
+\color{black}
 \bigskip
 
 Overlay an example of each of the distributions on a plot below. Each distribution should have $\mu$ = 0.05 and \textit{n}= 10:
 
-\bigskip
+\color{red} To create this plot, I used the following commands: \\
+plot( dpois( x=0:9, lambda=0.05 ), pch=1, main = "Density plots of Poisson and Binomial distributions", xlab = "Number of successes", ylab = "Probability") \\
+points( dbinom(x=0:9, 10, 0.05), pch = 15) \\
+leg.txt <- c("white circles = Poisson", "black squares = Binomial") \\
+legend('topright', leg.txt, lty = 1, col = c('white', 'white')) \\
+\color{black}
 
-\bigskip
 
-\bigskip
 
-\bigskip
-
-\bigskip
-
-\bigskip
-
-\bigskip
-
-\bigskip
-
-\bigskip
-
-\bigskip
+\includegraphics[width =1\textwidth]{/Users/laurenblake/Dropbox/Human_Variation_and_Disease_TA/Distributions_plot.png}
 
 \bigskip
 
@@ -275,9 +248,9 @@ Overlay an example of each of the distributions on a plot below. Each distributi
 
 \end{itemize}
 
-\bigskip
+\color{red} The Poisson distribution because, in general, there is a small number of crossovers compared to the relatively large number of possible crossovers given the entire length of the chromosomes. 
 
-\bigskip
+\color{black}
 
 \bigskip
 
@@ -293,9 +266,9 @@ Overlay an example of each of the distributions on a plot below. Each distributi
 
 \end{itemize}
 
-\bigskip
+\color{red} The geometric distribution is used to get the probability of a given number of failures until a success. This means that as soon as there is a success, we stop recording trials. Alternatively, the binomial distribution allows us to have more than one success and the success(es) can be scattered throughout the independent trials rather than at the end. 
 
-\bigskip
+\color{black}
 
 \bigskip
 
@@ -303,32 +276,33 @@ Overlay an example of each of the distributions on a plot below. Each distributi
 
 \begin{itemize}
 
-\item \textbf{Concept Check 14:} If Prob\{\textbf{X} = \textit{$x_{i}$}\} = $p_{i}$ and Prob\{\textbf{Y} = $x_{i}$\} = \textit{$p_{j}$}, then the random variables \textit{X} and \textit{Y} are independent if \textit{$p_{ij}$} = \hrulefill
+\item \textbf{Concept Check 14:} If Prob\{\textbf{X} = \textit{$x_{i}$}\} = $p_{i}$ and Prob\{\textbf{Y} = $x_{i}$\} = \textit{$p_{j}$}, then the random variables \textit{X} and \textit{Y} are independent if \textit{$p_{ij}$} = \color{red} \textit{$p_{i}$} $\times$ \textit{$p_{j}$}
+
+\color{black}
 
 \item Covariance is defined as Cov \{\textbf{X,Y}\} =  \textit{E}\{\big($\textbf{X - $\mu_{x}$}$\big) \big($\textbf{Y - $\mu_{y}$}$\big)\}
 
 \item The covariance is a measure of the tendency of two random variables to vary together. 
 
 \bigskip
-\item \textbf{Concept Check 15:} If \textit{X} and \textit{Y} tend to be large together and small together, then their covariance will be \hrulefill. 
+\item \textbf{Concept Check 15:} If \textit{X} and \textit{Y} tend to be large together and small together, then their covariance will be \color{red} positive
 
-\item If two random variables are independent, then their covariance is \hrulefill.
+\color{black}
+
+\item If two random variables are independent, then their covariance is \color{red} 0 \color{black}
 
 \item The correlation coefficient of \textit{X} and \textit{Y} = \[\frac{Cov(X, Y)}{\sqrt(Var (X))\sqrt(Var (Y))} \] 
 
 \bigskip
-\item \textbf{Concept Check 16:} In the definition of the correlation coefficient, the covariance is scaled by the variance. Why is this ``normalization'' step important? What additional information can we get from this step?
+\item \textbf{Concept Check 16:} In the definition of the correlation coefficient, the covariance is scaled by the variance. Why is this ``normalization'' step important? What additional information can we get from this step? \color{red} We are comparing the relative size of the covariance to the variances. If the covariance is big, we do not know if this is due to a truly strong correlation between \textit{X} and \textit{Y} or if it is being driven by large variances of  \textit{X} and \textit{Y}. The correlation coefficient helps us to answer this question. Additionally, after normalization, we can compare correlation coefficients across different studies. While before the covariance may be big, this can be due to 
 
-\bigskip
-
-\bigskip
+\color{black}
 
 \bigskip
 \item \textbf{Challenge 2:} Suppose we have two sites on a chromosome, \textit{A} and \textit{B}, each with two alleles in a haploid individual. If we were to plug in the probability of \textit{$A_{1}$} and \textit{$B_{1}$} into the formula for correlation coefficient, describe the information in words that we will get from this.
 
-\bigskip
-
-\bigskip
+\color{red} This question introduces the concept of linkage disequilibrium. This means that we are looking for how often the alleles \textit{$A_{1}$} and \textit{$B_{1}$} ``travel together'' a.k.a. how often they appear together compared to what would be expected by chance. 
+\color{black}
 
 \bigskip
 \textit{Note: These questions are based on material found in the Human Variation and Disease lectures titled ``LD'' and ``Quantative Genetics I''.}
@@ -336,9 +310,6 @@ Overlay an example of each of the distributions on a plot below. Each distributi
 
  \end{itemize}
 
-\bigskip
-
-\bigskip
 
 \bigskip
 \section{Operations on random variables}
@@ -355,12 +326,12 @@ then \textit{E}\{\textbf{Y}\} = \textit{aE}\{\textbf{X}\} + \textit{b} and the V
 \item \textbf{Concept Check 17:} As we can see, the variance of \{\textbf{X + Y}\} relies on the variance of \{\textbf{X}\}, the variance of \{\textbf{Y}\}, and the covariance of \{\textbf{X,Y}\}. Why do you think that is? 
 
 
-\bigskip
+\color{red} This implies that the variance of the mean increases with the average of the correlations. In other words, additional correlated observations are not as effective as additional independent observations at reducing the uncertainty of the mean. (Answer from the Wikipedia article titled ``Variance''.)
+
+\color{black}
 
 \bigskip
-
-\bigskip
-\item \textbf{Concept Check 18:}  What is the Var\{\textbf{X + Y}\} when \textbf{X} and \textbf{Y} are independent? 
+\item \textbf{Concept Check 18:}  What is the Var\{\textbf{X + Y}\} when \textbf{X} and \textbf{Y} are independent? \color{red} Var\{\textbf{X}\} + Var\{\textbf{Y}\} because 2Cov\{\textbf{X,Y}\} = 0. \color{black}
 
 \end{itemize}
 
@@ -375,7 +346,7 @@ then \textit{E}\{\textbf{Y}\} = \textit{aE}\{\textbf{X}\} + \textit{b} and the V
 
 \begin{itemize}
 
-\item \textbf{Concept Check 19:} Continuous random variables can have values from -$\infty$ to $\infty$. Therefore, the probability that a continuous random variable takes on 1 particular value is \hrulefill. 
+\item \textbf{Concept Check 19:}  Continuous random variables can have values from -$\infty$ to $\infty$. Therefore, the probability that a continuous random variable takes on 1 particular value is \color{red} negligible (0) \color{black}
 
 \item As a result, we will write the probability of a continuous random variable in a particular interval:
 
@@ -384,7 +355,9 @@ Prob \{\textit{a} \textless \textbf{X} \textless \textit{b} \} = $\int_{a}^{b}$ 
 
 where \textit{f\big(x\big)} is the probability density function. 
 
-\item \textbf{Concept Check 20:} Prob \{\textit{- $\infty$} \textless \textbf{X} \textless \textit{$\infty$} \} = $\int_{- \infty}^{\infty}$ \textit{f\big(x\big) dx} equals \hrulefill.
+\item \textbf{Concept Check 20:} Prob \{\textit{- $\infty$} \textless \textbf{X} \textless \textit{$\infty$} \} = $\int_{- \infty}^{\infty}$ \textit{f\big(x\big) dx} equals \color{red} 1 
+
+\color{black}
 
 \end{itemize}
 
@@ -394,19 +367,15 @@ where \textit{f\big(x\big)} is the probability density function.
 
 \item  \textbf{Concept Check 21:} How can you tell if a dataset is well described by the normal distribution? 
 
-\bigskip
-
-\bigskip
-
+\color{red} We want to use the 68-95-99.7 rule for normal distributions. This means that we should check if approx. 68\% of the data falls within 1 standard deviation of the mean, 95\% fall within 2 standard deviations of the mean and 99.7\% fall within 3 standard deviations of the mean. 
+\color{black}
 \bigskip
 
 \item \textbf{Concept Check 22:} List some phenotypes that we might model as normally distributed:
 
-\bigskip
+\color{red} Human height, blood pressure
 
-\bigskip
-
-\bigskip
+\color{black}
 
 \item The probability density function of the normal distribution is 
 \begin{eqnarray}
@@ -422,11 +391,9 @@ $\frac{\textit{X} - \mu}{\sigma}$
 
 \end{itemize}
 
-\bigskip
+\color{red} The biggest advantage is the ability to compare across studies, particularly if the original data in each of the studies are modeled by normal distributions with different means and variances. 
 
-\bigskip
-
-\bigskip
+\color{black}
 
 \subsection{Beta random variable} 
 
@@ -446,11 +413,9 @@ $\frac{\textit{X} - \mu}{\sigma}$
 
 \item  \textbf{Concept Check 24:} Above are PDFs of beta distributions with different alpha and beta values. You will see that on the x-axis are probabilities. How could having a distribution of probabilities be useful in a genetics context?
 
-\bigskip
+\color{red} We frequently are unsure of the true population probability and we want to find the best estimates of probabilities (e.g. allele frequencies, disease prevalence, etc.)
 
-\bigskip
-
-\bigskip
+\color{black}
 
 \end{itemize}
 
@@ -489,13 +454,13 @@ Cov(X,Y) & Var(Y)
 \bigskip
 \item The bivariate normal can be generalized to include more than two univariate random variables, called multivariate normal distributions. 
 
-\item A handful of the journal articles that we read in this class will use the bivariate or multivariate normal distribution. 
+\item A handful of the journal articles that we read in this class will use the bivariate or multivariate normal distribution (e.g. Pritchard et al. 2000 Genetics 155:945). 
 
 \item We will also use the moments and properties of the bivariate normal distribution, for example, in linear regression. 
 
-\item \textbf{Concept Check 25:} What is the goal of linear regression? 
+\item \textbf{Concept Check 25:}  What is the goal of linear regression? \color{red} To determine if variable X is a good predictor of variable Y. (Here, a ``good predictor'' is defined by being better than by chance. Also, there must be a linear relationship between X and Y.) 
+\color{black}
 
-\newpage
 \item The regression of \textbf{Y} on \textbf{X} is 
 
 
@@ -513,48 +478,35 @@ $\beta$ =  $\frac{Cov \{ \textbf{X},\textbf{Y} \} }{ \sigma_{x}^{2}} $
 
 \textit{E} \{\textbf{Y} $\mid$ \textbf{X} = x \} is 
 
-\bigskip
+\color{red} 
 
-\bigskip
+The expectation of Y given a particular value of X. This coincides nicely with the goal of regression because we want to be able to give our model a value of X and use that to come up with our best prediction of Y. 
 
-\bigskip
+\color{black}
 
 $\mu_{y}$ is
 
-\bigskip
-
-\bigskip
-
-\bigskip
+\color{red} The average value of y. This is used because the mean is the best statistic to describe a variable in linear regression. \color{black}
 
 $\beta$ is
 
-\bigskip
+\color{red} This is how strong the relationship between X and Y is relative to the variance (spread) of X. In genetics, this is often referred to as the ``effect size''. 
 
-\bigskip
-
-\bigskip
+\color{black}
 
  \textit{x - $\mu_{x}$} is
  
- \bigskip
+\color{red} This is the difference between the random variable \textit{X} and the mean of X. This is useful because when you know how far the given value of X deviates from the mean so that you can use this information to figure out how the given value of Y deviates from the mean. 
 
-\bigskip
-
-\bigskip
+\color{black}
  
 
 
 \end{itemize}
 
 
- \bigskip
-
 \bigskip
-
-\bigskip
-
-\textbf{Note:} This worksheet was created by Lauren E. Blake using the material from ``Population Genetics, A Concise Guide'' by John Gillespie 2nd edition and ``Introduction to Probability'' by D. P. Bertsekas and J. N. Tsitsiklis, 1st edition. Kindly edited by course instructor John Novembre and Nan Xiao. 
+\textbf{Note:} This worksheet was created by Lauren E. Blake using the material from ``Population Genetics, A Concise Guide'' by John Gillespie 2nd edition and ``Introduction to Probability'' by D. P. Bertsekas and J. N. Tsitsiklis, 1st edition. Kindly edited by course instructor John Novembre. 
 
 
 
